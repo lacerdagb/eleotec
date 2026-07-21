@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FL REFRI TEC - Refrigeração e Elétrica em Rio de Janeiro</title>
+    <meta name="description" content="Instalação, manutenção e higienização de ar-condicionado, geladeiras, freezers e sistemas elétricos. Atendimento rápido com a FL REFRI TEC.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-blue: #0056b3;
+            --secondary-blue: #eef6ff;
+            --accent-orange: #ff8c00;
+            --dark-gray: #333;
+            --light-gray: #f9f9f9;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background-color: var(--white);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo img { max-height: 75px; display: block; }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+        }
+
+        .logo span { color: var(--accent-orange); }
+
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('flocos-de-neve.jpg') no-repeat center center/cover;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        /* Buttons */
+        .cta-button {
+            background: var(--accent-orange);
+            color: var(--white);
+            padding: 18px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: transform 0.3s, background 0.3s;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(255, 140, 0, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            background: #e67e00;
+        }
+
+        /* Benefits Section */
+        #benefits {
+            padding: 80px 0;
+            background: var(--secondary-blue);
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .benefit-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .benefit-card i {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+        }
+
+        /* Services Section */
+        #services { padding: 80px 0; }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 { font-size: 2.2rem; position: relative; padding-bottom: 15px; }
+
+        .section-title h2::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: var(--accent-orange);
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .service-item {
+            display: flex;
+            align-items: center;
+            background: var(--light-gray);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid var(--primary-blue);
+        }
+
+        .service-item i { margin-right: 15px; color: var(--primary-blue); }
+
+        /* Social Proof */
+        #testimonials { background: var(--dark-gray); color: var(--white); padding: 80px 0; }
+
+        .testimonial-card {
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 10px;
+            font-style: italic;
+        }
+
+        /* Final CTA Section - Apelativa */
+        #final-cta {
+            padding: 100px 0;
+            background: var(--primary-blue);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .final-box h2 { font-size: 2.5rem; margin-bottom: 20px; }
+        .final-box p { font-size: 1.3rem; margin-bottom: 40px; opacity: 0.9; }
+
+        footer {
+            background: #111;
+            color: #777;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.2rem; }
+            .final-box h2 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-content">
+             <a href="#hero" class="logo">
+                <img src="logo.jpg" alt="Logo Império Fest Bão" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none; color:#FFF; font-weight:800; font-size:1.4rem; letter-spacing:1px;">EleoTec <span style="color:var(--primary-color);">EleoTec</span></span>
+            </a>
+            <a href="https://wa.me/5521965321487" class="cta-button" style="padding: 10px 20px; font-size: 0.9rem;">Solicitar Orçamento</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Seu Aparelho Parou? <br>A Solução Chegou!</h1>
+                    <p>Especialista em Refrigeração e Elétrica. Manutenção de ar-condicionado, geladeiras, freezers e serviços elétricos em geral.</p>
+                    <a href="https://wa.me/5521965321487?text=Olá,%20Eleodoro!%20Vi%20seu%20site%20e%20gostaria%20de%20um%20orçamento%20para%20refrigeração/elétrica." class="cta-button">
+                        <i class="fab fa-whatsapp"></i> QUERO MEU ORÇAMENTO GRÁTIS
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Por que escolher a FL REFRI TEC?</h2>
+                </div>
+                <div class="grid-3">
+                    <div class="benefit-card">
+                        <i class="fas fa-tools"></i>
+                        <h3>Atendimento Rápido</h3>
+                        <p>Sabemos que problemas com refrigeração não podem esperar. Atendemos com agilidade.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-user-check"></i>
+                        <h3>Serviço de Qualidade</h3>
+                        <p>O Eleodoro garante um trabalho limpo, técnico e com garantia total do serviço.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <h3>Preço Justo</h3>
+                        <p>Cobramos o valor honesto por um serviço profissional de alto padrão.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>O Que Fazemos Por Você</h2>
+                </div>
+                <div class="service-list">
+                    <div class="service-item"><i class="fas fa-snowflake"></i> Ar-condicionado (Instalação e Limpeza)</div>
+                    <div class="service-item"><i class="fas fa-box-open"></i> Geladeiras e Freezers (Reparo e Manutenção)</div>
+                    <div class="service-item"><i class="fas fa-warehouse"></i> Manutenção em Frigoríficos</div>
+                    <div class="service-item"><i class="fas fa-bolt"></i> Elétrica (Manutenção e Reparos Gerais)</div>
+                    <div class="service-item"><i class="fas fa-shield-virus"></i> Higienização Preventiva</div>
+                    <div class="service-item"><i class="fas fa-check-circle"></i> Manutenção Corretiva Agilizada</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <div class="section-title">
+                    <h2 style="color: white;">Quem Confia no Nosso Trabalho</h2>
+                </div>
+                <div class="grid-3">
+                    <div class="testimonial-card">
+                        <p>"O Eleodoro salvou o freezer do meu comércio. Atendimento rápido e muito honesto. Recomendo demais!"</p>
+                        <br><strong>- Ricardo Santos</strong>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Fiz a higienização do meu ar-condicionado e a parte elétrica da cozinha. Serviço impecável e limpo."</p>
+                        <br><strong>- Maria Oliveira</strong>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Melhor técnico de refrigeração que já chamei. Preço justo e realmente entende do assunto."</p>
+                        <br><strong>- João Carlos</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="final-cta">
+            <div class="container">
+                <div class="final-box">
+                    <h2>Não deixe o prejuízo aumentar!</h2>
+                    <p>Um aparelho com defeito gasta mais energia e pode queimar de vez. Resolva agora com quem entende.</p>
+                    <a href="https://wa.me/5521965321487?text=Olá!%20Meu%20aparelho%20deu%20problema%20e%20preciso%20de%20ajuda%20urgente!" class="cta-button" style="background: #25d366; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);">
+                        <i class="fab fa-whatsapp"></i> FALAR COM ELEODORO AGORA
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FL REFRI TEC - Todos os direitos reservados.</p>
+            <p>Atendimento no Rio de Janeiro e Região.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
