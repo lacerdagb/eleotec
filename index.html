@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FL REFRI TEC - Refrigeração e Elétrica em Rio de Janeiro</title>
+    <title>ELEOTEC - Refrigeração e Elétrica em Rio de Janeiro</title>
     <meta name="description" content="Instalação, manutenção e higienização de ar-condicionado, geladeiras, freezers e sistemas elétricos. Atendimento rápido com a FL REFRI TEC.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
 
     <style>
         :root {
@@ -187,6 +188,55 @@
             font-style: italic;
         }
 
+        /* Contact Section */
+        #contact-info {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .contact-card {
+            background: var(--light-gray);
+            padding: 35px 25px;
+            border-radius: 10px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary-blue);
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-card i {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+        }
+
+        .contact-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--dark-gray);
+        }
+
+        .contact-card p, .contact-card a {
+            color: #555;
+            font-size: 1.05rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-card a:hover {
+            color: var(--accent-orange);
+        }
+
         /* Final CTA Section - Apelativa */
         #final-cta {
             padding: 100px 0;
@@ -221,7 +271,7 @@
                 <img src="logo.jpg" alt="Logo Império Fest Bão" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                 <span style="display:none; color:#FFF; font-weight:800; font-size:1.4rem; letter-spacing:1px;">EleoTec <span style="color:var(--primary-color);">EleoTec</span></span>
             </a>
-            <a href="https://wa.me/5521965321487" class="cta-button" style="padding: 10px 20px; font-size: 0.9rem;">Solicitar Orçamento</a>
+            <a href="https://wa.me/5521975316604?text=Olá,%20eu%20vim%20do%20site%20de%20vocês%20e%20gostaria%20de%20tirar%20umas%20dúvidas" target="_blank" class="cta-button"  style="padding: 10px 20px; font-size: 0.9rem;">Solicitar Orçamento</a>
         </div>
     </header>
 
@@ -231,7 +281,7 @@
                 <div class="hero-content">
                     <h1>Seu Aparelho Parou? <br>A Solução Chegou!</h1>
                     <p>Especialista em Refrigeração e Elétrica. Manutenção de ar-condicionado, geladeiras, freezers e serviços elétricos em geral.</p>
-                    <a href="https://wa.me/5521965321487?text=Olá,%20Eleodoro!%20Vi%20seu%20site%20e%20gostaria%20de%20um%20orçamento%20para%20refrigeração/elétrica." class="cta-button">
+                    <a href="https://wa.me/5521975316604?text=Olá,%20eu%20vim%20do%20site%20de%20vocês%20e%20gostaria%20de%20tirar%20umas%20dúvidas" class="cta-button" target="_blank">
                         <i class="fab fa-whatsapp"></i> QUERO MEU ORÇAMENTO GRÁTIS
                     </a>
                 </div>
@@ -241,7 +291,7 @@
         <section id="benefits">
             <div class="container">
                 <div class="section-title">
-                    <h2>Por que escolher a FL REFRI TEC?</h2>
+                    <h2>Por que escolher a ELEOTEC?</h2>
                 </div>
                 <div class="grid-3">
                     <div class="benefit-card">
@@ -301,12 +351,37 @@
             </div>
         </section>
 
+        <section id="contact-info">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Fale Conosco e Atendimento</h2>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Telefone / WhatsApp</h3>
+                        <p><a href="https://wa.me/5521975316604?text=Olá,%20eu%20vim%20do%20site%20de%20vocês%20e%20gostaria%20de%20tirar%20umas%20dúvidas" target="_blank">(21) 97531-6604</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Horário de Funcionamento</h3>
+                        <p>Segunda a Sexta: 08:00 às 18:00<br>Sábado: 08:00 às 14:00</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-instagram"></i>
+                        <h3>Nosso Instagram</h3>
+                        <p><a href="https://www.instagram.com/eleotec/" target="_blank">@eleotec</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="final-cta">
             <div class="container">
                 <div class="final-box">
                     <h2>Não deixe o prejuízo aumentar!</h2>
                     <p>Um aparelho com defeito gasta mais energia e pode queimar de vez. Resolva agora com quem entende.</p>
-                    <a href="https://wa.me/5521965321487?text=Olá!%20Meu%20aparelho%20deu%20problema%20e%20preciso%20de%20ajuda%20urgente!" class="cta-button" style="background: #25d366; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);">
+                    <a href="https://wa.me/5521975316604?text=Olá,%20eu%20vim%20do%20site%20de%20vocês%20e%20gostaria%20de%20tirar%20umas%20dúvidas" class="cta-button" target="_blank" style="background: #25d366; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);">
                         <i class="fab fa-whatsapp"></i> FALAR COM ELEODORO AGORA
                     </a>
                 </div>
@@ -316,8 +391,8 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 FL REFRI TEC - Todos os direitos reservados.</p>
-            <p>Atendimento no Rio de Janeiro e Região.</p>
+            <p>&copy; 2026 ELEOTEC - Todos os direitos reservados.</p>
+            <p><a href="https://www.tracaoweb.com.br" target="_blank">Desenvolvido por Tração Web 💻🌐</a></p>
         </div>
     </footer>
 
